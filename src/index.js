@@ -11,7 +11,7 @@ export default function WhatsAppWidget({
   companyName = 'Support',
   sendButton = 'Send',
   placeholder = 'Type a message',
-  iconLogo = () => <BiSupport />,
+  IconLogo = () => <BiSupport />,
   phoneNumber
 }) {
   return (
@@ -24,7 +24,7 @@ export default function WhatsAppWidget({
           sendButton={sendButton}
           placeholder={placeholder}
           message={message}
-          iconLogo = {iconLogo}
+          IconLogo = {IconLogo}
         />
         <WhatsAppButton />
       </WidgetContextProvider>
