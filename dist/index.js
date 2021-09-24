@@ -24,7 +24,7 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-var styles = {"root":"_App-module__root__2iWL7","open":"_App-module__open__1fOYS","customTransition":"_App-module__customTransition__11FGp","close":"_App-module__close__bvAzs"};
+var styles = {"root":"_2iWL7","open":"_1fOYS","customTransition":"_11FGp","close":"_bvAzs"};
 
 var Context = React__default.createContext({});
 function WidgetContextProvider(_ref) {
@@ -48,12 +48,12 @@ function WidgetContextProvider(_ref) {
   }, children);
 }
 
-var styles$1 = {"root":"_Header-module__root__2rVjT","close_btn":"_Header-module__close_btn__1w7Ch","logo":"_Header-module__logo__10MlI","texts":"_Header-module__texts__1Ixzy","texts_h1":"_Header-module__texts_h1__2C9-R","texts_span":"_Header-module__texts_span__3B7os"};
+var styles$1 = {"root":"_2rVjT","close_btn":"_1w7Ch","logo":"_10MlI","texts":"_1Ixzy","texts_h1":"_2C9-R","texts_span":"_3B7os"};
 
 function Header(_ref) {
   var companyName = _ref.companyName,
       textReplyTime = _ref.textReplyTime,
-      iconLogo = _ref.iconLogo,
+      IconLogo = _ref.IconLogo,
       handleOpen = _ref.handleOpen;
   return /*#__PURE__*/React__default.createElement("div", {
     className: styles$1.root
@@ -62,7 +62,7 @@ function Header(_ref) {
     onClick: handleOpen
   }, /*#__PURE__*/React__default.createElement(ai.AiOutlineClose, null)), /*#__PURE__*/React__default.createElement("div", {
     className: styles$1.logo
-  }, iconLogo), /*#__PURE__*/React__default.createElement("div", {
+  }, /*#__PURE__*/React__default.createElement(IconLogo, null)), /*#__PURE__*/React__default.createElement("div", {
     className: styles$1.texts
   }, /*#__PURE__*/React__default.createElement("span", {
     className: styles$1.texts_h1
@@ -71,7 +71,7 @@ function Header(_ref) {
   }, textReplyTime)));
 }
 
-var styles$2 = {"root":"_ChatSection-module__root__3YWHv","message":"_ChatSection-module__message__nYEjV","message_title":"_ChatSection-module__message_title__jryeF","message_body":"_ChatSection-module__message_body__3CMpi","triangle_top_right":"_ChatSection-module__triangle_top_right__eRm_Y","message_time":"_ChatSection-module__message_time__2x2HJ"};
+var styles$2 = {"root":"_3YWHv","message":"_nYEjV","message_title":"_jryeF","message_body":"_3CMpi","triangle_top_right":"_eRm_Y","message_time":"_2x2HJ"};
 
 function ChatSection(_ref) {
   var companyName = _ref.companyName,
@@ -92,7 +92,7 @@ function ChatSection(_ref) {
   }, time)));
 }
 
-var styles$3 = {"root":"_SendButton-module__root__30mQ0","input":"_SendButton-module__input__2-mAj","button":"_SendButton-module__button__2W95M"};
+var styles$3 = {"root":"_30mQ0","input":"_2-mAj","button":"_2W95M"};
 
 function SendButton(_ref) {
   var sendButton = _ref.sendButton,
@@ -142,7 +142,7 @@ function App(props) {
   }, props)), /*#__PURE__*/React__default.createElement(ChatSection, props), /*#__PURE__*/React__default.createElement(SendButton, props));
 }
 
-var styles$4 = {"root":"_WhatsAppButton-module__root__1bpcM"};
+var styles$4 = {"root":"_1bpcM"};
 
 function WhatsAppButton() {
   var _useContext = React.useContext(Context),
@@ -167,10 +167,10 @@ function WhatsAppWidget(_ref) {
       sendButton = _ref$sendButton === void 0 ? 'Send' : _ref$sendButton,
       _ref$placeholder = _ref.placeholder,
       placeholder = _ref$placeholder === void 0 ? 'Type a message' : _ref$placeholder,
-      _ref$iconLogo = _ref.iconLogo,
-      iconLogo = _ref$iconLogo === void 0 ? function () {
+      _ref$IconLogo = _ref.IconLogo,
+      IconLogo = _ref$IconLogo === void 0 ? function () {
     return /*#__PURE__*/React__default.createElement(bi.BiSupport, null);
-  } : _ref$iconLogo,
+  } : _ref$IconLogo,
       phoneNumber = _ref.phoneNumber;
   return /*#__PURE__*/React__default.createElement("div", {
     className: styles$5.root
@@ -181,7 +181,7 @@ function WhatsAppWidget(_ref) {
     sendButton: sendButton,
     placeholder: placeholder,
     message: message,
-    iconLogo: iconLogo
+    IconLogo: IconLogo
   }), /*#__PURE__*/React__default.createElement(WhatsAppButton, null)));
 }
 
