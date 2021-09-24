@@ -1,4 +1,5 @@
 import React from 'react'
+import { BiSupport } from 'react-icons/bi'
 import App from './components/App'
 import WhatsAppButton from './components/WhatsAppButton'
 import { WidgetContextProvider } from './context/widgetContext'
@@ -10,6 +11,7 @@ export default function WhatsAppWidget({
   companyName = 'Support',
   sendButton = 'Send',
   placeholder = 'Type a message',
+  iconLogo = () => <BiSupport />,
   phoneNumber
 }) {
   return (
@@ -22,6 +24,7 @@ export default function WhatsAppWidget({
           sendButton={sendButton}
           placeholder={placeholder}
           message={message}
+          iconLogo = {iconLogo}
         />
         <WhatsAppButton />
       </WidgetContextProvider>
